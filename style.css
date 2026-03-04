@@ -43,6 +43,11 @@ html,body{
     box-shadow: 0 0 30px #d68282;
 
     animation: borderAnimate 4s linear infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+    border-width: 0px;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 0 0px #d68282;
 }
 .box img{
     padding-inline: 1px;
@@ -52,6 +57,14 @@ html,body{
     padding-inline: 25px;
     font-size: 1.2rem;
     text-align: center;
+}
+.box:hover{
+    animation-play-state: running;
+    border-width: 2px;
+    box-shadow: 0 0 40px #d68282;
+}
+.box:hover p, .box:hover h1{
+    color: #d68282;
 }
 /* @keyframes changeBG{
     from{
