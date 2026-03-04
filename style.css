@@ -62,9 +62,10 @@ html,body{
     animation-play-state: running;
     border-width: 2px;
     box-shadow: 0 0 40px #d68282;
+    text-shadow: 0 0 10px #000000;
 }
 .box:hover p, .box:hover h1{
-    color: #d68282;
+    color: #dd1717;
 }
 /* @keyframes changeBG{
     from{
